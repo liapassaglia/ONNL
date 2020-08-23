@@ -1,3 +1,9 @@
+<style>
+	#video{
+		margin:20px;
+	}
+	body {overflow-x: hidden;}
+</style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
@@ -19,14 +25,14 @@
 
 </head>
 	<body>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
 				<li class="nav-item">
@@ -35,8 +41,8 @@
 				<li class="nav-item">
 					<a class="nav-link" href="./research.html">Research</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./method.html">Methods</a>
+				<li class="nav-item active">
+					<a class="nav-link" href="./methods.html">Methods</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./papers.html">Papers</a>
@@ -50,5 +56,17 @@
 			  </ul>
 			</div>
 		</nav>
-</body>
+		<div class="fluid-container">
+			<div class="row" style="height:10px;"></div>
+			<div class="flex-row text-center" id="videos">
+				<embed src="http://www.youtube.com/v/zXP-anC09Rk?version=3&amp;hl=en_US&amp;rel=0" id = "video" width="300" height="200">
+				<embed src="http://www.youtube.com/v/Ro5eiWmdYn8?version=3&amp;hl=en_US&amp;rel=0" id="video" width="300" height="200">
+			</div>
+			<div class="row" style="height:10px;"></div>
+			<div class="flex-row text-center" id="videos">
+				<embed src="http://www.youtube.com/v/GIHQLtW_laU?version=3&amp;hl=en_US&amp;rel=0" id="video" width="300" height="200">
+				<embed src="http://www.youtube.com/v/UIrc05yWeCs?version=3&amp;hl=en_US&amp;rel=0" id="video" width="300" height="200">
+			</div>
+		</div>
+	</body>
 </html>

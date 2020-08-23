@@ -1,3 +1,25 @@
+<style>
+	.btn{
+		font-family: 'Playfair Display', serif;
+		font-weight: 100;
+	}
+	.col-5 h1{
+		font-family: 'Playfair Display', serif;
+		font-size: 30px;
+	}
+	#infoPar{
+		padding-top: 50;
+		font-size: 15px;
+		font-weight:300;
+		width: 500;
+	}
+	#myBtn{
+  		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+	}
+	body {overflow-x: hidden;}
+</style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
@@ -19,24 +41,24 @@
 
 </head>
 	<body>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
 				<li class="nav-item">
 				  <a class="nav-link" href="./members.html">Members</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="./research.html">Research</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./method.html">Methods</a>
+					<a class="nav-link" href="./methods.html">Methods</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./papers.html">Papers</a>
@@ -50,5 +72,99 @@
 			  </ul>
 			</div>
 		</nav>
-</body>
+		<div class="fluid-container" id="horseshoe1">
+			<div class="row justify-content-center">
+				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe1'))">Horseshoe Crab 1</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe2'))">Horseshoe Crab 2</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('rat1'))">Rat 1</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('rat2'))">Rat 2</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('salamander'))">Salamander</button>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<h1>Horseshoe Crab 1,</h1>
+					<img src="images/horseshoecrab1.png" class="img" height= 400 width=500>
+				</div>
+				<div class="col-6">
+					<p id="infoPar">
+						<strong>a)</strong> Compound lateral eye of the horseshoe crab
+						<br>
+						<strong>b)</strong> Light enters the eye through an array of approximately 1000 ommatidial lenses. Within each ommatidium 10-12 retinula cells transduce the visual input into an electrical signal that passively propagates to a single eccentric cell. The eccentric cell encodes the electrical signal with action potentials that are sent down the optic nerve to the brain and sent laterally to neighboring ommatidial receptors to inhibit their activity.
+						<br>
+						<strong>c)</strong> An electrical equivalent circuit of the neural mechanisms for vision in the crab eye. The model can accurately reproduce the output of the eye under daytime lighting conditions.
+						<br>
+						<strong>d)</strong> Response of single nerve fibers are recorded with a microelectrode (#) of crabs moving in the ocean while the input to their eye is monitored with an underwater video camera (*).
+						<br>
+						<strong>e)</strong> Crabcam image of a black underwater target about the size of a female horseshoe crab (left). Males can see such a target almost equally well day and night. The target is detectable is the output of a nighttime model of the crab eye if a nonlinear mechanism known to activate at low levels is included in the model (right) and not when the mechanism is excluded (middle).
+					</p>
+				</div>
+			</div>
+			<div class="row no-gutters" id="horseshoe2">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<h1>Horseshoe Crab 2,</h1>
+					<img src="images/horseshoecrab2.png" class="img" height= 350 width=500>
+				</div>
+				<div class="col-6">
+					<p id="infoPar">
+						<strong>a)</strong> Sensitivity of the horseshoe crab eye to light is modulated by a circadian clock in the animal’s brain, as evidence by the daily rhythm in ERG amplitude (peak-to-peak) that is measured from the eye of animals kept in constant darkness.<br>
+						<strong>b)</strong> Efferent optic nerve fibers of the circadian clock can be recorded or stimulated by opening a small hole in the carapace and inserting portions of the nerve in a suction microelectrode.<br>
+						<strong>c)</strong> Clock fibers are active only at night and their activity is complex in structure, with spike fired in multicellular synchronized bursts (top) that repeat in regular intervals of 1-2s (middle) that are clustered together in periodic episodes of activity separated by minutes of silence (bottom).<br>
+						<strong>d)</strong> Circadian messages are encoded in the burst activity, as stimulating the optic nerve electrically with artificial spike trains (blue intervals) causes ERG amplitude to increase to a sustained level which returns to baseline when stimulation ceases.<br>
+					</p>
+				</div>
+			</div>
+			<div class="row no-gutters" id="rat1">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<h1>Rat 1,</h1>
+					<img src="images/rat1.png" class="img" height= 350 width=500>
+				</div>
+				<div class="col-6">
+					<p id="infoPar">
+						<strong>a)</strong> Tungsten microelectrode is advanced into the optic tract of anesthetized rats to record retinal ganglion cell activity.<br>
+						<strong>b)</strong> Visual stimuli are presented to the animal on a video monitor. Due to the poor resolution of the rat eye, the stimuli are optically transformed to correct for planar distortions at close viewing distances.<br>
+						<strong>c)</strong> Retinal ganglion cells respond to drifting sinewave gratings with a sinusoidal modulation of spike rate.<br>
+						<strong>d)</strong> By varying the spatial frequency of drifting (filled symbols) and contrast-reversing (unfilled symbols) gratings, the spatial transfer function of ganglion cells is mapped. X and Y types of ganglion cell may be identified in rats, with both having a maximal resolution of 0.1-0.3 cycles/degree. Like other mammals, Y cells (right) are generally more responsive than X cells (left), and they generate frequency-doubled responses to reversing gratings centered on the receptive field that are significantly greater than the baseline noise level (dashed line).
+					</p>
+				</div>
+			</div>
+			<div class="row no-gutters" id="rat2">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<h1>Rat 2,</h1>
+					<img src="images/rat2.png" class="img" height= 350 width=500>
+				</div>
+				<div class="col-6">
+					<p id="infoPar">
+						<strong>a)</strong> Morrison method of glaucoma induction in rats. Hypertonic saline is injected into one episcleral vein while other veins are temporarily occluded with a plastic ring, which scleroses the limbal vasculature.<br>
+						<strong>b)</strong> After a period of a few weeks intraocular pressure (IOP) is significantly elevated in the treated eye (filled symbols) relative to the untreated eye (unfilled symbols).<br>
+						<strong>c)</strong> Ganglion cell responses are tolerant to acute increases from the resting IOP level (20mmHg plot) to a glaucomatous IOP level (40mmHg plot) and deteriorates only when IOP nears blood perfusion pressure (120mmHg plot). An outstanding research question is why chronic pressure increases like in b, which have no short-term effects, cause ganglion cells to die.<br>
+						<strong>d)</strong> Images of the ganglion cell layer of the untreated (control) eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.<br>
+						<strong>e)</strong> Images of the ganglion cell layer of the treated eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.
+					</p>
+				</div>
+			</div>
+			<div class="row no-gutters" id="salamander">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<h1>Salamander,</h1>
+					<img src="images/salamander.png" class="img" height= 350 width=500>
+				</div>
+				<div class="col-6">
+					<p id="infoPar">
+						<strong>a)</strong> Experimental setup for patch recordings of salamander ganglion cells in retinal slices.<br>
+						<strong>b)</strong> Excitatory current response of ganglion cells (bottom) to randomly modulated luminance signal (top).<br>
+						<strong>c)</strong> Stimulus paradigm for probing contrast gain changes consists of a brief flash of light for ON cells or dark for OFF cells. The flash is presented against a grey background (control), at the end of a 25% step up and down in background luminance, and at varying times after the offset of the background pedestal. <br>
+						<strong>d)</strong> Response gain (amplitude/control amplitude) is enhanced prior to pedestal offset for luminance decrements and depressed for luminance increments, consistent with a luminance adaptive process. After pedestal offset, response gain returns to the control level at a faster rate following luminance decrements than luminance increments (as indicated by box)
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

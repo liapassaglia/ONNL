@@ -1,3 +1,19 @@
+<style>
+	.fluid-container h1 {
+		padding-left: 20px;
+		padding-right: 20px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 100;
+		font-size: 25px;
+	}
+	.fluid-container p {
+		padding-left: 20px;
+		padding-right: 20px;
+		font-weight: 300;
+		font-size: 14px;
+	}
+	body {overflow-y: hidden;}
+</style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
@@ -19,14 +35,14 @@
 
 </head>
 	<body>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
 				<li class="nav-item">
@@ -36,12 +52,12 @@
 					<a class="nav-link" href="./research.html">Research</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./method.html">Methods</a>
+					<a class="nav-link" href="./methods.html">Methods</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./papers.html">Papers</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="./courses.html">Courses</a>
 				</li>
 				<li class="nav-item">
@@ -50,5 +66,30 @@
 			  </ul>
 			</div>
 		</nav>
+		<div class="fluid-container">
+				<h1>Current Academic Year</h1>
+				<p>
+				<strong>EGN 3433 Modeling and Analysis of Engineering Systems – </strong>
+				Sophomore-Level course on how to formulate mathematical models of dynamic systems through application of theoretical principles and experimental observations and how to simulate the behavior of model systems through application of analytical and numerical methods of differential equation solution. Major concepts include first- and second-order linear constant-coefficient ODEs with applications to biological, chemical, electrical, and mechanical systems, Laplace Transforms and system transfer functions, and basic numerical techniques and software for system simulation.
+				<br>
+				<br>
+				<strong>ECH 4846 Numerical Methods in Chemical and Biomedical Engineering – </strong>
+				Junior-Level course on developing necessary mathematical and computer programming skills for solving engineering problems, particularly those involving chemical systems and biomedical processes. Major concepts include computer arithmetic and approximation errors, numerical differentiation and integration, interpolation, regression, and methods for solving systems of linear and nonlinear equations and of ordinary and partial differential equations.
+				</p>
+				<h1>Prior Academic Years</h1>
+				<p>
+				<strong>Signals and Systems in Biomedical Engineering - </strong>
+				Junior-level course in applying signals and systems analysis techniques to biomedical problems. Topics include: Fourier series, Fourier integral, Laplace transforms, convolution, impulse and frequency responses, sampling theory, and Bode diagrams, as well as an introduction to communication systems, multiplexing, and amplitude/frequency modulation.
+				<br>
+				<br>
+				<strong>Engineering Physiology Labs - </strong>
+				Junior-Level course designed to develop basic experimental and modeling skills. Simulation of physical and physiological systems, experimental determination of transfer functions, filtering properties of sensory systems, transducer instrumentation, muscle dynamics, spectroscopy, power spectral analysis. Emphasis is on comparison of experimental data with theoretical expectation. Quantitative Physiology for Engineers
+				Graduate-level course in human physiology for biomedical engineering students. Fundamentals of cellular and systems physiology, including the nervous, muscular, cardiovascular, respiratory, renal, gastrointestinal, endocrine, and immune systems. Quantitative and engineering approaches are applied to physiological concepts.
+				<br>
+				<br>
+				<strong>Systems Identification and Parameter Identification - </strong>
+				Graduate-level course in building mathematical models of biological systems from input-output data. Topics include: input signals for system identification, data transformation and reduction (PCA, ICA), nonparametric (impulse/freq response, Volterra/Weiner kernels, block structures) and parametric models (ARMA, Box-Jenkins, NARMAX) of linear and nonlinear systems, parameter estimation and numerical methods, recursive identification (adaptive models, state space/Kalman filtering), system identifiability and parameter sensitivity, model selection/validation, optimal experiment design. Applications mainly to systems biology and physiological systems (eg., visual, auditory, neuromuscular).
+				</p>
+		</div>
 </body>
 </html>
