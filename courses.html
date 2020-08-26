@@ -1,18 +1,20 @@
 <style>
-	.fluid-container h1 {
+	.container-fluid h1 {
 		padding-left: 20px;
 		padding-right: 20px;
 		font-family: 'Playfair Display', serif;
 		font-weight: 100;
 		font-size: 25px;
 	}
-	.fluid-container p {
+	.container-fluid p {
 		padding-left: 20px;
 		padding-right: 20px;
 		font-weight: 300;
 		font-size: 14px;
 	}
-	body {overflow-y: hidden;}
+	.spacer{
+		height:110px;
+	}
 </style>
 <!DOCTYPE hmtl>
 <html lang="en">
@@ -35,13 +37,16 @@
 
 </head>
 	<body>
+		<div class="page-header text-center">
+			<img src="images/ONNLDesign.PNG" height=15% width=10%>
+			OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav mr-auto">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			  <ul class="navbar-nav">
 				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
@@ -66,29 +71,20 @@
 			  </ul>
 			</div>
 		</nav>
-		<div class="fluid-container">
+		<div class="container-fluid">
 				<h1>Current Academic Year</h1>
 				<p>
-				<strong>EGN 3433 Modeling and Analysis of Engineering Systems – </strong>
-				Sophomore-Level course on how to formulate mathematical models of dynamic systems through application of theoretical principles and experimental observations and how to simulate the behavior of model systems through application of analytical and numerical methods of differential equation solution. Major concepts include first- and second-order linear constant-coefficient ODEs with applications to biological, chemical, electrical, and mechanical systems, Laplace Transforms and system transfer functions, and basic numerical techniques and software for system simulation.
-				<br>
-				<br>
-				<strong>ECH 4846 Numerical Methods in Chemical and Biomedical Engineering – </strong>
-				Junior-Level course on developing necessary mathematical and computer programming skills for solving engineering problems, particularly those involving chemical systems and biomedical processes. Major concepts include computer arithmetic and approximation errors, numerical differentiation and integration, interpolation, regression, and methods for solving systems of linear and nonlinear equations and of ordinary and partial differential equations.
+				<strong>BME 4508/6491: Biomedical Signals & Systems Analysis:</strong><br>
+				<img src="images/sigssys.png" height=35% width=25% align="left">
+				The course is intended for students with limited background in linear/nonlinear analysis of dynamical signals and systems. The objective is to equip upper-level undergraduate and graduate engineering students with skills in the graphical depiction, mathematical description, functional characterization, and quantitative modeling of physiological signals and systems. Course topics are applied to biochemical, bioelectrical, and biomechanical processes through in-class examples, computer simulations, and homework problems that often involve MATLAB programming.
 				</p>
-				<h1>Prior Academic Years</h1>
 				<p>
-				<strong>Signals and Systems in Biomedical Engineering - </strong>
-				Junior-level course in applying signals and systems analysis techniques to biomedical problems. Topics include: Fourier series, Fourier integral, Laplace transforms, convolution, impulse and frequency responses, sampling theory, and Bode diagrams, as well as an introduction to communication systems, multiplexing, and amplitude/frequency modulation.
-				<br>
-				<br>
-				<strong>Engineering Physiology Labs - </strong>
-				Junior-Level course designed to develop basic experimental and modeling skills. Simulation of physical and physiological systems, experimental determination of transfer functions, filtering properties of sensory systems, transducer instrumentation, muscle dynamics, spectroscopy, power spectral analysis. Emphasis is on comparison of experimental data with theoretical expectation. Quantitative Physiology for Engineers
-				Graduate-level course in human physiology for biomedical engineering students. Fundamentals of cellular and systems physiology, including the nervous, muscular, cardiovascular, respiratory, renal, gastrointestinal, endocrine, and immune systems. Quantitative and engineering approaches are applied to physiological concepts.
-				<br>
-				<br>
-				<strong>Systems Identification and Parameter Identification - </strong>
-				Graduate-level course in building mathematical models of biological systems from input-output data. Topics include: input signals for system identification, data transformation and reduction (PCA, ICA), nonparametric (impulse/freq response, Volterra/Weiner kernels, block structures) and parametric models (ARMA, Box-Jenkins, NARMAX) of linear and nonlinear systems, parameter estimation and numerical methods, recursive identification (adaptive models, state space/Kalman filtering), system identifiability and parameter sensitivity, model selection/validation, optimal experiment design. Applications mainly to systems biology and physiological systems (eg., visual, auditory, neuromuscular).
+				<img src="images/phys.png" height=35% width=15% align="right">
+				</p>
+				<div class="spacer"></div>
+				<p>
+				<strong>BME 4409/6409: Engineering Physiology:</strong><br>
+				The objective of the course is to impart upper-level undergraduate and graduate engineering students with core knowledge of physiological systems and processes and quantitative understanding of basic cell and tissue functions. The content and delivery of material is aimed primarily at students with little prior exposure to physiology concepts, methods, and terminology. The volume of information is unavoidably large, so lectures are designed to reinforce key processes and principles discussed in assigned readings. A secondary aim is to introduce students to classic physiological models and biomedical technologies to foster appreciation of computational and translational perspectives. This is accomplished via computer simulations and lab tours. Covered systems include nerve, muscle, heart, and lung.
 				</p>
 		</div>
 </body>

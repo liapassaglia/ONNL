@@ -1,8 +1,8 @@
 <style>
-	.fluid-container{
+	.container-fluid{
 		padding-top: 15px;
 	}
-	.fluid-container h1 {
+	.container-fluid h1 {
 		padding-top: 10px;
 		padding-left: 20px;
 		padding-right: 20px;
@@ -10,7 +10,7 @@
 		font-weight: 100;
 		font-size: 25px;
 	}
-	.fluid-container p {
+	.container-fluid p {
 		padding-left: 20px;
 		padding-right: 20px;
 		font-weight: 300;
@@ -20,7 +20,6 @@
 		color: black !important;
 		font-weight: 300;
 	}
-	body {overflow-y: hidden;}
 </style>
 <!DOCTYPE hmtl>
 <html lang="en">
@@ -43,13 +42,16 @@
 
 </head>
 	<body>
+		<div class="page-header text-center">
+			<img src="images/ONNLDesign.PNG" height=15% width=10%>
+			OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav mr-auto">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			  <ul class="navbar-nav">
 				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
@@ -74,33 +76,41 @@
 			  </ul>
 			</div>
 		</nav>
-		<div class="fluid-container text-center">
-				<h1>Organizations</h1>
-				<p>
-					<a id="link" href="https://www.arvo.org/" target="_blank">ARVO (Association for Research in Vision & Opthalmology</a>
-				<br>
-					<a id="link" href="https://www.bmes.org/" target="_blank">BMES (Biomedical Engineering Society)</a>
-				<br>
-					<a id="link" href="https://www.sfn.org/" target="_blank">SFN (Society for Neuroscience)</a>
-				</p>
-				<h1>Journals</h1>
-				<p>
-					<a id="link" href="http://www.iovs.org/" target="_blank">IOVS</a>
-				<br>
-					<a id="link" href="https://journals.physiology.org/journal/jn" target="_blank">Journal of Neurophysiology</a>
-				<br>
-					<a id="link" href="https://www.jneurosci.org/" target="_blank">Journal of Neuroscience</a>
-				<br>
-					<a id="link" href="https://jov.arvojournals.org/" target="_blank">Journal of Vision</a>
-				<br>
-					<a id="link" href="https://www.cell.com/neuron/home" target="_blank">Neuro</a>
-				<br>
-					<a id="link" href="https://www.pnas.org/" target="_blank">PNAS</a>
-				<br>
-					<a id="link" href="https://www.cambridge.org/core/journals/visual-neuroscience" target="_blank">Visual Neuroscience</a>
-				<br>
-					<a id="link" href="https://www.journals.elsevier.com/vision-research/" target="_blank">Vision</a>
-			</p>
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col">
+					<h1>Organizations</h1>
+					<p>
+						<a id="link" href="https://www.arvo.org/" target="_blank">ARVO (Association for Research in Vision & Opthalmology</a>
+					<br>
+						<a id="link" href="https://www.bmes.org/" target="_blank">BMES (Biomedical Engineering Society)</a>
+					<br>
+						<a id="link" href="https://www.sfn.org/" target="_blank">SFN (Society for Neuroscience)</a>
+					<br>
+						<a id="link" href="https://www.sfn.org/" target="_blank">ISER (International Society for Eye Research</a>
+					</p>
+				</div>
+				<div class="col">
+					<h1>Journals</h1>
+					<p>
+						<a id="link" href="http://www.iovs.org/" target="_blank">IOVS</a>
+					<br>
+						<a id="link" href="https://journals.physiology.org/journal/jn" target="_blank">Journal of Neurophysiology</a>
+					<br>
+						<a id="link" href="https://www.jneurosci.org/" target="_blank">Journal of Neuroscience</a>
+					<br>
+						<a id="link" href="https://jov.arvojournals.org/" target="_blank">Journal of Vision</a>
+					<br>
+						<a id="link" href="https://www.cell.com/neuron/home" target="_blank">Experimental Eye Research</a>
+					<br>
+						<a id="link" href="https://www.pnas.org/" target="_blank">PNAS</a>
+					<br>
+						<a id="link" href="https://www.cambridge.org/core/journals/visual-neuroscience" target="_blank">Visual Neuroscience</a>
+					<br>
+						<a id="link" href="https://www.journals.elsevier.com/vision-research/" target="_blank">Vision Research</a>
+					</p>
+				</div>
+			</div>
 		</div>
 </body>
 </html>

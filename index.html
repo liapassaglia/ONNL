@@ -1,30 +1,45 @@
 <style>
-	body {overflow-y: hidden;}
+	#welcome{
+		font-family: 'Playfair Display', serif;
+		font-size: 30px;
+		font-weight: 100;
+	}
+	#welcomePar{
+		font-weight: 300;
+		font-size: 15px;
+	}
+	#contact{
+		font-family: 'Playfair Display', serif;
+		color: white;
+		font-size: 17px;
+		font-weight: 600;
+	}
 	#newsFeed h1{
 		font-family: 'Playfair Display', serif;
-		position: absolute;
-		right: 8%;
-		top: 15%;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 100;
 	}
 	#newsFeed p{
-		right: 0%;
-		position: absolute;
-		top: 25%;
-		width: 280px;
-		height: 400px;
 		font-weight: 300;
+		font-size: 15px;
 	}
 	#link{
-		color: rgb(3, 85, 3);
+		color: #01573C;
 		font-weight: 300;
+	}
+	#footer{
+		background-color: #01573C;
+	}
+	#picCap{
+		font-family: 'Playfair Display', serif;
+		font-size:9px;
+		font-weight: 100;
 	}
 </style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
-		<title>OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</title>
+		<title>ONNL</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,78 +57,105 @@
 
 </head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>	  
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-				  <a class="nav-link" href="./index.html">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="./members.html">Members</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./research.html">Research</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./methods.html">Methods</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./papers.html">Papers</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./courses.html">Courses</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./links.html">Links</a>
-				</li>
-			  </ul>
+		<div class="page-header text-center">
+				<img src="images/ONNLDesign.PNG" height=15% width=10%>
+				OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+		</div>
+		<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>	  
+					<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+						<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="./members.html">Members</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./research.html">Research</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./methods.html">Methods</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./papers.html">Papers</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./courses.html">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./links.html">Links</a>
+						</li>
+					</ul>
+					</div>
+				</nav>
+				<div class="row no-gutters">
+					<div class="col-4 text-left">
+						<h1 id="welcome">Welcome,</h1>
+						<p id="welcomePar">
+							For most people vision comes naturally. The seemless ease of the process disguises a complex web of interactions amongst vast networks of visual neurons.
+						</p>
+						<p id="welcomePar">
+							The objectives of our research lab is: 
+							<br>
+							<br><strong>i)</strong> to understand how neural networks of the eye represent visual images in the optic nerve signals that it sends to the brain under normal and diseased conditions
+							<br>
+							<br><strong>ii)</strong> to use the knowledge to engineer ocular devices and effective diagnostic and therapeutic strategies.
+							<br>
+						</p>
+					</div>
+					<div class="col-4 text-center">
+						<figure>
+							<img src="images/Retina.png" height=300 width=100%/>
+							<figcaption id="picCap"><em>rat retinal ganglion cell bodies (white) co-labled with an axon stain (red) and cell marker (green)</em></figcaption>
+						</figure>
+					</div>
+					<div class="col-4 text-right">
+						<div id="newsFeed">
+							<h1>News,</h1>
+							<p>
+								<a id="link" href="https://www.usf.edu/news/2020/new-method-gives-glaucoma-researchers-control-over-eye-pressure.aspx" target="_blank">New Method Gives Glaucoma Researchers Control Over Eye Pressure</a>
+								<br>
+								Thursday, March 5, 2020
+								<br>
+								<br>
+								<a id="link" href="http://eyeonvision.blogspot.com/" target="_blank">Brain pressure controls eye pressure, revealing new avenues for glaucoma treatment- Radio interview included</a>
+								<br>
+								Thursday, February 20, 2020
+								<br>
+								<br>
+								<a id="link" href="https://www.usf.edu/news/2020/new-method-gives-glaucoma-researchers-control-over-eye-pressure.aspx" target="_blank">Neuroscientists Discover Brain Pressure Controls Eye Pressure, Revealing New Avenues for Glaucoma Treatment</a>
+								<br>
+								Monday, January 13, 2020
+							</p>
+						</div>
+					</div>
+				</div>	
+				<div class="spacer" style="height:20px;"></div>
+				<div class="row" id="footer">
+					<div class="col-3">
+						<img src="images/USFmini.jpg" alt="usf logo" width=90% height="60" align="absbottom">
+					</div>
+					<div class="col-3 text-center" id="contact">
+						<p></p>
+						CHRISTOPHER PASSAGLIA, PH.D. 
+					</div>
+					<div class="col-3 text-center" id="contact">
+						<p></p>
+						ENG229F/247 (LAB/OFFICE)
+					</div>
+					<div class="col-2 text-center" id="contact">
+						<p></p>
+						passaglia@usf.edu
+					</div>
+					<div class="col-1 text-center" id="contact" style="line-height:11px">
+						<p></p>
+						<a id="contact" href="https://liapassaglia.github.io" target="_blank" style="font-size:small">ia<sup>3</sup></a>
+						<br>2020
+				</div>	
 			</div>
-		</nav>
-		<header>
-			<div class="jumbotron jumbotron-fluid">
-				<h1 id="welcome">Welcome,</h1>
-				<p id="welcomePar1">
-				For most people vision comes naturally. The seemless ease of the process disguises a complex web of interactions amongst vast networks of visual neurons. The complexity and fragility of these networks are revealed most vividly for those people afflicted with ocular diseases like glaucoma. 
-				</p>
-				<p id="welcomePar2">
-					The objectives of our research lab is: 
-					<br><strong>i)</strong> to understand how neural networks of the eye represent visual images in the optic nerve signals that it sends to <br>the brain under normal and diseased conditions 
-					<br><strong>ii)</strong> to use the knowledge to engineer ocular devices and effective diagnostic and therapeutic strategies.
-				</p>
-				<div id="newsFeed">
-					<h1>News,</h1>
-					<p>
-						<a id="link" href="https://www.usf.edu/news/2020/new-method-gives-glaucoma-researchers-control-over-eye-pressure.aspx" target="_blank">New Method Gives Glaucoma Researchers Control Over Eye Pressure</a>
-						<br>
-						Thursday, March 5, 2020
-						<br>
-						<br>
-						<a id="link" href="http://eyeonvision.blogspot.com/" target="_blank">Brain pressure controls eye pressure, revealing new avenues for glaucoma treatment- Radio interview included</a>
-						<br>
-						Thursday, February 20, 2020
-						<br>
-						<br>
-						<a id="link" href="https://www.usf.edu/news/2020/new-method-gives-glaucoma-researchers-control-over-eye-pressure.aspx" target="_blank">Neuroscientists Discover Brain Pressure Controls Eye Pressure, Revealing New Avenues for Glaucoma Treatment</a>
-						<br>
-						Monday, January 13, 2020
-					</p>
-				</div>
-				<div class="usfLogo">
-					<img src="images/USFLogo.jpg" alt="usf logo" width="400" height="50">
-				</div>
-				<p id="contact" style="left:35%">
-					CHRISTOPHER PASSAGLIA, PH.D. 
-				</p>
-				<p id="contact" style="right:25%">
-					ENG229F/247 (LAB/OFFICE)
-				</p>
-				<p id="contact" style="right:3%; font-size:21">
-					passaglia@usf.edu
-				</p>
-			</div>
-		</header>
+	</body>
 </html>

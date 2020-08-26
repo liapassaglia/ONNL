@@ -1,57 +1,19 @@
-.navbar-light .navbar-brand{
+.page-header{
 	font-family: 'Playfair Display', serif;
 	color: rgb(3, 85, 3);
+	font-size: 40px;
+	font-weight: 1000;
+}
+.navbar-light .navbar-brand{
+	font-family: 'Playfair Display', serif;
+	color:#01573C;
 	font-size: 25px;
 	font-weight: 1000;
 }
+.navbar-brand:hover{
+	color: rgb(3, 85, 3) !important;
+}
 .navbar-light{
+	font-size: 20px;
 	font-weight: 300;
-}
-.jumbotron{
-	background-color: white;
-	background-image: url("images/ONNLDesign.png");
-	background-position: absolute;
-	background-position-x: 400px;
-	background-size: 45%;
-	background-repeat: no-repeat;	
-	height: 500px;
-}
-.usfLogo{
-	position: absolute;
-	left:1%;
-	bottom:2%;
-}
-#welcome{
-	font-family: 'Playfair Display', serif;
-	padding-left: 50px;
-	position: absolute;
-	top: 15%;
-	font-size: 40px;
-	font-weight: 100;
-}
-#welcomePar1{
-	padding-left: 50px;
-	position: absolute;
-	top: 25%;
-	width: 400px;
-	height: 400px;
-	font-weight: 300;
-	font-size:19;
-}
-#welcomePar2{
-	padding-left: 50px;
-	position: absolute;
-	top: 63%;
-	width: 1000px;
-	height: 400px;
-	font-weight: 300;
-	font-size:19;
-}
-#contact{
-	font-family: 'Playfair Display', serif;
-	position: absolute;
-	bottom: 0%;
-	color: rgb(3, 85, 3);
-	font-size: 17px;
-	font-weight: 600;
 }

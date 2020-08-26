@@ -1,22 +1,18 @@
 <style>
-	.btn{
+	.btn-primary{
 		font-family: 'Playfair Display', serif;
 		font-weight: 100;
+		background-color: #01573C !important;
+		border-color: #01573C !important;
 	}
 	.col-5 h1{
 		font-family: 'Playfair Display', serif;
 		font-size: 30px;
 	}
 	#infoPar{
-		padding-top: 50;
+		padding-top:20;
 		font-size: 15px;
 		font-weight:300;
-		width: 500;
-	}
-	#myBtn{
-  		position: fixed;
-  		bottom: 20px;
-  		right: 30px;
 	}
 	body {overflow-x: hidden;}
 </style>
@@ -41,13 +37,16 @@
 
 </head>
 	<body>
+		<div class="page-header text-center">
+			<img src="images/ONNLDesign.PNG" height=15% width=10%>
+			OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#">OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>	  
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav mr-auto">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			  <ul class="navbar-nav">
 				<li class="nav-item">
 				  <a class="nav-link" href="./index.html">Home</a>
 				</li>
@@ -72,25 +71,25 @@
 			  </ul>
 			</div>
 		</nav>
-		<div class="fluid-container" id="horseshoe1">
+		<div class="container-fluid" id="horseshoe1">
 			<div class="row justify-content-center">
-				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe1'))">Horseshoe Crab 1</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe1'))">Horseshoe Crab 1</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe2'))">Horseshoe Crab 2</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe2'))">Horseshoe Crab 2</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('rat1'))">Rat 1</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('rat1'))">Rat 1</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('rat2'))">Rat 2</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('rat2'))">Rat 2</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-outline-dark" id="buttonText" onclick="smoothScroll(document.getElementById('salamander'))">Salamander</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('salamander'))">Salamander</button>
 			</div>
-			<div class="row no-gutters">
+			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-5">
 					<h1>Horseshoe Crab 1,</h1>
-					<img src="images/horseshoecrab1.png" class="img" height= 400 width=500>
+					<img src="images/horseshoecrab1.png" class="img" width=100% height=80%>
 				</div>
-				<div class="col-6">
+				<div class="col-5">
 					<p id="infoPar">
 						<strong>a)</strong> Compound lateral eye of the horseshoe crab
 						<br>
@@ -103,14 +102,15 @@
 						<strong>e)</strong> Crabcam image of a black underwater target about the size of a female horseshoe crab (left). Males can see such a target almost equally well day and night. The target is detectable is the output of a nighttime model of the crab eye if a nonlinear mechanism known to activate at low levels is included in the model (right) and not when the mechanism is excluded (middle).
 					</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
-			<div class="row no-gutters" id="horseshoe2">
+			<div class="row" id="horseshoe2">
 				<div class="col-1"></div>
 				<div class="col-5">
 					<h1>Horseshoe Crab 2,</h1>
-					<img src="images/horseshoecrab2.png" class="img" height= 350 width=500>
+					<img src="images/horseshoecrab2.png" class="img" width=100% height=80%>
 				</div>
-				<div class="col-6">
+				<div class="col-5">
 					<p id="infoPar">
 						<strong>a)</strong> Sensitivity of the horseshoe crab eye to light is modulated by a circadian clock in the animal’s brain, as evidence by the daily rhythm in ERG amplitude (peak-to-peak) that is measured from the eye of animals kept in constant darkness.<br>
 						<strong>b)</strong> Efferent optic nerve fibers of the circadian clock can be recorded or stimulated by opening a small hole in the carapace and inserting portions of the nerve in a suction microelectrode.<br>
@@ -118,14 +118,15 @@
 						<strong>d)</strong> Circadian messages are encoded in the burst activity, as stimulating the optic nerve electrically with artificial spike trains (blue intervals) causes ERG amplitude to increase to a sustained level which returns to baseline when stimulation ceases.<br>
 					</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
-			<div class="row no-gutters" id="rat1">
+			<div class="row" id="rat1">
 				<div class="col-1"></div>
 				<div class="col-5">
 					<h1>Rat 1,</h1>
-					<img src="images/rat1.png" class="img" height= 350 width=500>
+					<img src="images/rat1.png" class="img" width=100% height=80%>
 				</div>
-				<div class="col-6">
+				<div class="col-5">
 					<p id="infoPar">
 						<strong>a)</strong> Tungsten microelectrode is advanced into the optic tract of anesthetized rats to record retinal ganglion cell activity.<br>
 						<strong>b)</strong> Visual stimuli are presented to the animal on a video monitor. Due to the poor resolution of the rat eye, the stimuli are optically transformed to correct for planar distortions at close viewing distances.<br>
@@ -133,14 +134,15 @@
 						<strong>d)</strong> By varying the spatial frequency of drifting (filled symbols) and contrast-reversing (unfilled symbols) gratings, the spatial transfer function of ganglion cells is mapped. X and Y types of ganglion cell may be identified in rats, with both having a maximal resolution of 0.1-0.3 cycles/degree. Like other mammals, Y cells (right) are generally more responsive than X cells (left), and they generate frequency-doubled responses to reversing gratings centered on the receptive field that are significantly greater than the baseline noise level (dashed line).
 					</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
-			<div class="row no-gutters" id="rat2">
+			<div class="row" id="rat2">
 				<div class="col-1"></div>
 				<div class="col-5">
 					<h1>Rat 2,</h1>
-					<img src="images/rat2.png" class="img" height= 350 width=500>
+					<img src="images/rat2.png" class="img" width=100% height=80%>
 				</div>
-				<div class="col-6">
+				<div class="col-5">
 					<p id="infoPar">
 						<strong>a)</strong> Morrison method of glaucoma induction in rats. Hypertonic saline is injected into one episcleral vein while other veins are temporarily occluded with a plastic ring, which scleroses the limbal vasculature.<br>
 						<strong>b)</strong> After a period of a few weeks intraocular pressure (IOP) is significantly elevated in the treated eye (filled symbols) relative to the untreated eye (unfilled symbols).<br>
@@ -149,14 +151,15 @@
 						<strong>e)</strong> Images of the ganglion cell layer of the treated eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.
 					</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
-			<div class="row no-gutters" id="salamander">
+			<div class="row" id="salamander">
 				<div class="col-1"></div>
 				<div class="col-5">
 					<h1>Salamander,</h1>
-					<img src="images/salamander.png" class="img" height= 350 width=500>
+					<img src="images/salamander.png" class="img" width=100% height=80%>
 				</div>
-				<div class="col-6">
+				<div class="col-5">
 					<p id="infoPar">
 						<strong>a)</strong> Experimental setup for patch recordings of salamander ganglion cells in retinal slices.<br>
 						<strong>b)</strong> Excitatory current response of ganglion cells (bottom) to randomly modulated luminance signal (top).<br>
@@ -164,6 +167,7 @@
 						<strong>d)</strong> Response gain (amplitude/control amplitude) is enhanced prior to pedestal offset for luminance decrements and depressed for luminance increments, consistent with a luminance adaptive process. After pedestal offset, response gain returns to the control level at a faster rate following luminance decrements than luminance increments (as indicated by box)
 					</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
 		</div>
 	</body>
