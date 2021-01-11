@@ -14,12 +14,31 @@
 		font-size: 15px;
 		font-weight:300;
 	}
-	body {overflow-x: hidden;}
+	body {overflow-x: hidden;
+	}
+	.spacer{
+		height: 12px;
+	}
+	#glaucoma{
+		display: inline-flex;
+	}
+	#neuralcoding{
+		display : none;
+	}
+	#circadianrhythms{
+		display : none;
+	}
+	#retinalprocessing{
+		display : none;
+	}
+	#computationalmodeling{
+		display : none;
+	}
 </style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
-		<title>OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</title>
+		<title>OCULAR NEUROSCIENCE & NEUROENGINEERING LAB</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +58,7 @@
 	<body>
 		<div class="page-header text-center">
 			<img src="images/ONNLDesign.PNG" height=15% width=10%>
-			OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+			OCULAR NEUROSCIENCE & NEUROENGINEERING LAB
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +82,9 @@
 					<a class="nav-link" href="./papers.html">Papers</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="./patents.html">Patents</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="./courses.html">Courses</a>
 				</li>
 				<li class="nav-item">
@@ -71,22 +93,56 @@
 			  </ul>
 			</div>
 		</nav>
-		<div class="container-fluid" id="horseshoe1">
+		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe1'))">Horseshoe Crab 1</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="changeResearch('glaucoma')">GLAUCOMA</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('horseshoe2'))">Horseshoe Crab 2</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="changeResearch('neuralcoding')">NEURAL CODING</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('rat1'))">Rat 1</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="changeResearch('computationalmodeling')">COMPUTATIONAL MODELING</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('rat2'))">Rat 2</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="changeResearch('circadianrhythms')">CIRCADIAN RHYTHMS</button>
 				<div style="width:5px"></div>
-				<button type="button" class="btn btn-primary" id="buttonText" onclick="smoothScroll(document.getElementById('salamander'))">Salamander</button>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="changeResearch('retinalprocessing')">RETINAL PROCESSING</button>
 			</div>
-			<div class="row">
+			<div class="spacer"></div>
+			<div class="row" id="glaucoma">
 				<div class="col-1"></div>
 				<div class="col-5">
-					<h1>Horseshoe Crab 1,</h1>
+					<br>
+					<img src="images/rat2.png" class="img" width=100% height=80%>
+				</div>
+				<div class="col-5">
+					<p id="infoPar">
+						<strong>a)</strong> Morrison method of glaucoma induction in rats. Hypertonic saline is injected into one episcleral vein while other veins are temporarily occluded with a plastic ring, which scleroses the limbal vasculature.<br>
+						<strong>b)</strong> After a period of a few weeks intraocular pressure (IOP) is significantly elevated in the treated eye (filled symbols) relative to the untreated eye (unfilled symbols).<br>
+						<strong>c)</strong> Ganglion cell responses are tolerant to acute increases from the resting IOP level (20mmHg plot) to a glaucomatous IOP level (40mmHg plot) and deteriorates only when IOP nears blood perfusion pressure (120mmHg plot). An outstanding research question is why chronic pressure increases like in b, which have no short-term effects, cause ganglion cells to die.<br>
+						<strong>d)</strong> Images of the ganglion cell layer of the untreated (control) eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.<br>
+						<strong>e)</strong> Images of the ganglion cell layer of the treated eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.
+					</p>
+				</div>
+				<div class="col-1"></div>
+			</div>
+			<div class="row" id="neuralcoding">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<br>
+					<img src="images/rat1.png" class="img" width=100% height=80%>
+				</div>
+				<div class="col-5">
+					<p id="infoPar">
+						<strong>a)</strong> Tungsten microelectrode is advanced into the optic tract of anesthetized rats to record retinal ganglion cell activity.<br>
+						<strong>b)</strong> Visual stimuli are presented to the animal on a video monitor. Due to the poor resolution of the rat eye, the stimuli are optically transformed to correct for planar distortions at close viewing distances.<br>
+						<strong>c)</strong> Retinal ganglion cells respond to drifting sinewave gratings with a sinusoidal modulation of spike rate.<br>
+						<strong>d)</strong> By varying the spatial frequency of drifting (filled symbols) and contrast-reversing (unfilled symbols) gratings, the spatial transfer function of ganglion cells is mapped. X and Y types of ganglion cell may be identified in rats, with both having a maximal resolution of 0.1-0.3 cycles/degree. Like other mammals, Y cells (right) are generally more responsive than X cells (left), and they generate frequency-doubled responses to reversing gratings centered on the receptive field that are significantly greater than the baseline noise level (dashed line).
+					</p>
+				</div>
+				<div class="col-1"></div>
+			</div>
+			<div class="row" id="computationalmodeling">
+				<div class="col-1"></div>
+				<div class="col-5">
+					<br>
 					<img src="images/horseshoecrab1.png" class="img" width=100% height=80%>
 				</div>
 				<div class="col-5">
@@ -104,10 +160,10 @@
 				</div>
 				<div class="col-1"></div>
 			</div>
-			<div class="row" id="horseshoe2">
+			<div class="row" id="circadianrhythms">
 				<div class="col-1"></div>
 				<div class="col-5">
-					<h1>Horseshoe Crab 2,</h1>
+					<br>
 					<img src="images/horseshoecrab2.png" class="img" width=100% height=80%>
 				</div>
 				<div class="col-5">
@@ -120,43 +176,10 @@
 				</div>
 				<div class="col-1"></div>
 			</div>
-			<div class="row" id="rat1">
+			<div class="row" id="retinalprocessing">
 				<div class="col-1"></div>
 				<div class="col-5">
-					<h1>Rat 1,</h1>
-					<img src="images/rat1.png" class="img" width=100% height=80%>
-				</div>
-				<div class="col-5">
-					<p id="infoPar">
-						<strong>a)</strong> Tungsten microelectrode is advanced into the optic tract of anesthetized rats to record retinal ganglion cell activity.<br>
-						<strong>b)</strong> Visual stimuli are presented to the animal on a video monitor. Due to the poor resolution of the rat eye, the stimuli are optically transformed to correct for planar distortions at close viewing distances.<br>
-						<strong>c)</strong> Retinal ganglion cells respond to drifting sinewave gratings with a sinusoidal modulation of spike rate.<br>
-						<strong>d)</strong> By varying the spatial frequency of drifting (filled symbols) and contrast-reversing (unfilled symbols) gratings, the spatial transfer function of ganglion cells is mapped. X and Y types of ganglion cell may be identified in rats, with both having a maximal resolution of 0.1-0.3 cycles/degree. Like other mammals, Y cells (right) are generally more responsive than X cells (left), and they generate frequency-doubled responses to reversing gratings centered on the receptive field that are significantly greater than the baseline noise level (dashed line).
-					</p>
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row" id="rat2">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<h1>Rat 2,</h1>
-					<img src="images/rat2.png" class="img" width=100% height=80%>
-				</div>
-				<div class="col-5">
-					<p id="infoPar">
-						<strong>a)</strong> Morrison method of glaucoma induction in rats. Hypertonic saline is injected into one episcleral vein while other veins are temporarily occluded with a plastic ring, which scleroses the limbal vasculature.<br>
-						<strong>b)</strong> After a period of a few weeks intraocular pressure (IOP) is significantly elevated in the treated eye (filled symbols) relative to the untreated eye (unfilled symbols).<br>
-						<strong>c)</strong> Ganglion cell responses are tolerant to acute increases from the resting IOP level (20mmHg plot) to a glaucomatous IOP level (40mmHg plot) and deteriorates only when IOP nears blood perfusion pressure (120mmHg plot). An outstanding research question is why chronic pressure increases like in b, which have no short-term effects, cause ganglion cells to die.<br>
-						<strong>d)</strong> Images of the ganglion cell layer of the untreated (control) eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.<br>
-						<strong>e)</strong> Images of the ganglion cell layer of the treated eye of the rat in b. Green: Nissl stained somata of displaced amacrine and ganglion cells. Red: Rhodamine dextran backlabeled ganglion cell axons and cell bodies.
-					</p>
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row" id="salamander">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<h1>Salamander,</h1>
+					<br>
 					<img src="images/salamander.png" class="img" width=100% height=80%>
 				</div>
 				<div class="col-5">
@@ -170,5 +193,44 @@
 				<div class="col-1"></div>
 			</div>
 		</div>
+		<script>
+			function changeResearch(id){
+				if(id == "glaucoma"){
+					document.getElementById('glaucoma').style.display = "inline-flex";
+					document.getElementById('neuralcoding').style.display = "none"
+					document.getElementById('computationalmodeling').style.display = "none";
+					document.getElementById('circadianrhythms').style.display = "none";
+					document.getElementById('retinalprocessing').style.display = "none";
+				}
+				else if(id == "neuralcoding"){
+					document.getElementById('glaucoma').style.display = "none";
+					document.getElementById('neuralcoding').style.display = "inline-flex"
+					document.getElementById('computationalmodeling').style.display = "none";
+					document.getElementById('circadianrhythms').style.display = "none";
+					document.getElementById('retinalprocessing').style.display = "none";
+				}
+				else if(id == "computationalmodeling"){
+					document.getElementById('glaucoma').style.display = "none";
+					document.getElementById('neuralcoding').style.display = "none"
+					document.getElementById('computationalmodeling').style.display = "inline-flex";
+					document.getElementById('circadianrhythms').style.display = "none";
+					document.getElementById('retinalprocessing').style.display = "none";
+				}
+				else if(id == "circadianrhythms"){
+					document.getElementById('glaucoma').style.display = "none";
+					document.getElementById('neuralcoding').style.display = "none"
+					document.getElementById('computationalmodeling').style.display = "none";
+					document.getElementById('circadianrhythms').style.display = "inline-flex";
+					document.getElementById('retinalprocessing').style.display = "none";
+				}
+				else if(id == "retinalprocessing"){
+					document.getElementById('glaucoma').style.display = "none";
+					document.getElementById('neuralcoding').style.display = "none"
+					document.getElementById('computationalmodeling').style.display = "none";
+					document.getElementById('circadianrhythms').style.display = "none";
+					document.getElementById('retinalprocessing').style.display = "inline-flex";
+				}
+			}
+		</script>
 	</body>
 </html>

@@ -7,13 +7,25 @@
 	}
 	.card-text{
 		font-weight: 300;
+	} 
+	.papers h1{
+		font-family: 'Playfair Display', serif;
+		font-size: 30px;
+	}
+	.papers p{
+		font-weight: 300;
+		font-size: 15px;
+	}
+	#link {
+		color: black !important;
+		font-weight: 300;
 	}
 	body {overflow-x: hidden;}
 </style>
 <!DOCTYPE hmtl>
 <html lang="en">
 <head>
-		<title>OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB</title>
+		<title>OCULAR NEUROSCIENCE & NEUROENGINEERING LAB</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +45,7 @@
 	<body>
 		<div class="page-header text-center">
 			<img src="images/ONNLDesign.PNG" height=15% width=10%>
-			OCULAR NEUROSCIENCE AND NEUROENGINEERING LAB
+			OCULAR NEUROSCIENCE & NEUROENGINEERING LAB
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +69,9 @@
 					<a class="nav-link" href="./papers.html">Papers</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="./patents.html">Patents</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="./courses.html">Courses</a>
 				</li>
 				<li class="nav-item">
@@ -66,237 +81,287 @@
 			</div>
 		</nav>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb93.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Limulus Vision in the Oceans: Comparing Neural and Behavioral Thresholds</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB93.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb94.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Visual Response in the Brain of Limulus</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB94.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb95.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Limulus Is Tuned into Its Visual Environment</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB95.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/vr02.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Orientation sensitivity of ganglion cells in primate retina</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/vr02.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2"></div>
+			<div class="row justify-content-center">
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('1990'))">1990-1994</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('1995'))">1995-1999</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('2000'))">2000-2004</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('2005'))">2005-2009</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('2010'))">2010-2014</button>
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('2015'))">2015-2019</button>	
+				<div style="width:5px"></div>
+				<button type="button" class="btn btn-primary" id="buttonText" onclick="window.smoothScroll(document.getElementById('2020'))">2020-2024</button>			
 			</div>
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb96.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">The Temporal Transfer Function of the Limulus Lateral Eye</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB96.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb97.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Visual Performance of Horseshoe Crabs:Role of Underwater Lighting</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB97a.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/bb97b.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Histamine:Putative Transmitter for Lateral Inhibition in Limulus Eye</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/BB97b.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jap11.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">A method for measuring and modeling the physiological traits causing obstructive sleep apnea</p>
-						<a href="papers/jap11.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jbr11.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Spike Firing Pattern of Output Neurons of the Limulus Circadian Clock</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JBR11.pdf" class="btn btn-primary">See Profile</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jn001.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Effects of Remote Stimulation on the Mean Firing Rate of Cat Retinal Ganglion Cells</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JN2001.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jn09.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Effects of Remote Stimulation on the Modulated Activity of Cat Retinal Ganglion Cells</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JN09.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jnp08.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Complex Temporal Response Patterns With a Simple Retinal Circuit</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JNP08.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jnp10.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Retinal Ganglion Cell Adaptation to Small Luminance Fluctuations</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JNP10.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jnp98.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Cell-Based Model fo the Limulus Lateral Eye</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JNP98.pdf" class="btn btn-primary">Vie PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jnpo4b.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Impact of Noise on Retinal Coding of Visual Signals</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/jnp04b.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jove08.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Whole-cell recordings of light evoked excitatory synaptic currents in the retinal slice</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/jove08.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jove09.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Using the Horseshoe Crab, Limulus Polyphemus, in Vision Research</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/jove09.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/jove10.png" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Single-unit in vivo recordings from the optic chiasm of rat</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/JOVE10.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/pnas97.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Deciphering a neural code for vision</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/PNAS97.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/vn05.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Spatiotemporal integration of light by the cat X-cell center under photonic and scotopic conditions</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/VN05.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-3"></div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/vn08.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">The maintained discharge of rat retinal ganglion cells</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/VN08.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/vn11.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Spatial receptive field properties of rat retinal ganglion cells</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/VN11.pdf" class="btn btn-primary">Check it out</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-2 d-flex justify-content-center">
-					<div class="card">
-						<img class="card-img-top" src="papers/vo04.PNG" alt="Card image" height=250>
-						<div class="card-body">
-						<p class="card-text">Tono-Pen XL calibration curves for cats, cows and sheep</p>
-						<a href="http://www.eng.usf.edu/~passaglia/papers/vo04.pdf" class="btn btn-primary">View PDF</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-3"></div>
-			</div>
+		</div>
+		<div class="papers" id="2020" style="padding-left:20px;">
+			<h1>2020-2024</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.sciencedirect.com/science/article/pii/S030645222030645X?via%3Dihub" target="_blank">
+				Johnson N, Gregorich SM, Passaglia CL (in press) Spatiotemporal contrast sensitivity of Brown-Norway rats under
+				scotopic and photopic illumination. Neuroscience.</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7110362/pdf/ENEURO.0504-19.2020.pdf" target="_blank">
+				Fogli Iseppe A, Ogata G, Johnson JS, Partida GJ, Johnson N, Passaglia CL, Ishida AT (2020) Extraretinal spike
+				normalization in retinal ganglion cell axons. eNeuro. 0504-19.2020. doi: 10.1523/ENEURO.0504-19.2020. PMID:
+				32086286.</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6954231/pdf/41598_2019_Article_57022.pdf" target="_blank">
+				Ficarrotta KR, Passaglia CL (2020) Experimental glaucoma model with programmable IOP history. Sci Rep. 10:126.
+				doi: 10.1038/s41598-019-57022-5. PMID: 31924837</a>
+				<br>
+				<br>
+				<a id="link" href="https://physoc.onlinelibrary.wiley.com/doi/epdf/10.1113/JP278768" target="_blank">
+				Ficarrotta KR, Passaglia CL (2020) Intracranial pressure modulates aqueous humor dynamics of the eye. J Physiol.
+				598:403-413. PMID: 31769030.
+				[Toris C: Faculty Opinions Recommendation of [Ficarrotta KR and Passaglia CL, J Physiol (Lond) 2020 598(2):403-
+				413]. In Faculty Opinions, 05 Feb 2020; 10.3410/f.736989641.793570428]</a>
+				<br>
+				<br>
+				<a id="link" href="https://roj.igb.ru/jour/article/view/423/286" target="_blank">
+				Mineeva L.A., Balashevich L.I., Kozhukhov A.A., Shubin L.B., Kabanov A.V., Passaglia C.L., Richards D., Madow
+				B. (2020) The ability to assess the state of the fundus in patients with lens opacities of varying intensity, including
+				patients with type 2 diabetes mellitus, using quantitative analysis of images made with a fundus camera. А pilot
+				study. Russian Ophthalmol J. 13:29-35.</a>
+			</p>
+		</div>
+		<div class="papers" id="2015" style="padding-left:20px;">
+			<h1>2015-2019</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6136153/pdf/zns8087.pdf" target="_blank">
+				Partida GJ, Fasoli A, Fogli Iseppe A, Ogata G, Johnson JS, Thambiaiyah V, Passaglia CL, Ishida AT (2018)
+				Autophosphorylated CaMKII facilitates spike propagation in rat optic nerve. J Neurosci. PMID: 30076212	
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC5967599&blobtype=pdf" target="_blank">
+				Ficarrotta KR, Bello SA, Passaglia CL (2018) Aqueous humor dynamics of the Brown-Norway rat. Invest
+				Ophthalmol Vis Sci. 59:2529-2537. PMID: 29847660.</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5868860/pdf/i2164-2591-7-2-10.pdf" target="_blank">
+				Passaglia CL, Arvaneh T, Greenberg E, Richards D, Madow B (2018) Automated method of grading vitreous haze
+				in patients with uveitis for clinical trials. Trans Vis Sci Tech. 7: 10. PMID: 29600118</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5738387/pdf/41598_2017_Article_18344.pdf" target="_blank">
+				Stothert AR, Suntharalingam A, Tang X, Crowley VM, Mishra SJ, Webster JM, Nordhues B, Huard DJE, Passaglia
+				CL, Lieberman RL, Blagg BS, Blair LJ, Koren J, Dickey CA (2017) Isoform-selective Hsp90 inhibition rescues model
+				of hereditary open-angle glaucoma. Sci Rep. 7:17951. PMID: 29263415.</a>
+				<br>
+				<br>
+				<a id="link" href="https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC7034622&blobtype=pdf" target="_blank">
+				Bello SA, Passaglia CL (2017) A wireless pressure sensor for continuous monitoring of intraocular pressure in
+				conscious animals. Ann Biomed Eng. 45:2592-2604. PMID: 28812168</a>
+				<br>
+				<br>
+				<a id="link" href="https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC5364042&blobtype=pdf" target="_blank">
+				Bello SA, Malavade S, Passaglia CL (2017) Development of a smart pump for monitoring and controlling
+				intraocular pressure. Ann Biomed Eng 45:990-1002. PMID: 27679446.</a>
+				<br>
+				<br>
+				<a id="link" href="file:///C:/Users/16178/Downloads/Ortiz2017_Article_EfferentInfluencesOnTheBioelec.pdf" target="_blank">
+				Ortiz G, Odom JV, Passaglia CL, Tzekov RT (2017) Efferent influences on the bioelectrical activity of the retina in
+				primates. Doc Ophthalmol 134:57-73. PMID: 28032236</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4946590/?report=reader" target="_blank">
+				Tang X, Tzekov R, Passaglia CL (2016) Retinal crosstalk in the mammalian visual system. J Neurophysiol 115:3018-
+				29. PMID: 26984426.</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4686282/" target="_blank">
+					Valtcheva T, Passaglia CL (2015) Contrast adaptation in the Limulus lateral eye. J Neurophysiol 114:3234-41. PMID:
+					26445869
+				</a>
+				
+			</p>
+		</div>
+		<div class="papers" id="2010" style="padding-left:20px;">
+			<h1>2010-2014</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3633440/" target="_blank">
+					Wellman A, Edwards BA, Sands SA, Owens R, Nemati S, Butler J, Passaglia CL, Jackson AC, Malhotra A, White
+DP (2013) A simplified method for determining phenotypic traits in patients with obstructive sleep apnea. J Appl
+Physiol 114:911-22. PMID: 23411488. 
+				</a>
+				<br>
+				<br>
+				<a id="link" target="_blank">
+					Troy JB, Yrazu F, Passaglia CL (2012) The uniqueness of the message in a retinal ganglion cell spike train and its
+implication for retinal prostheses. Conf Proc IEEE Eng Med Biol Soc, 2012:312-3. PMID: 23365892
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5130229/" target="_blank">
+					Heine WF, Passaglia CL (2011) Spatial receptive field properties of rat retinal ganglion cells. Vis Neurosci 28:403-17.
+PMID: 21944166.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://journals.sagepub.com/doi/pdf/10.1177/0748730411409712" target="_blank">
+					Liu JS, Passaglia CL (2011) Spike firing pattern of output neurons of the Limulus circadian clock. J Biol Rhythms
+26:335-344. PMID: 21775292.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3119134/" target="_blank">
+					Wellman A, Eckert D, Jordan AS, Edwards B, Passaglia CL, Jackson A, Gautam S, Owens R, Malhotra A, White DP
+(2011) A method for measuring and modeling the physiologic traits causing obstructive sleep apnea. J Appl Physiol
+110:1627-37. PMID: 21436459.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3039668/" target="_blank">
+					Freeman DK, Grana G, Passaglia CL (2010) Luminance adaptation to low-contrast stimuli in retinal ganglion cells.
+J Neurophysiol 104:704-12. PMID: 20538771.
+				</a>
+				<br>
+				<br>
+				<a id="link" target="_blank">
+					Freeman DF, Heine WF, Passaglia CL (2010) Single-unit in vivo recordings from the optic chiasm of rat. J Vis Exp
+38, pii: 1887, doi:10.3791/1887. PMID: 20364119.
+				</a>
+			</p>
+		</div>
+		<div class="papers" id="2005" style="padding-left:20px;">
+			<h1>2005-2009</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2798857/pdf/jove-29-1384.pdf/?tool=EBI" target="_blank">
+					Liu JS, Passaglia CL (2009) Using the horseshoe crab, Limulus polyphemus, in vision research. J Vis Exp 29,
+pii:1384, doi: 10.3791/1384. PMID: 19578331.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2668207/pdf/zns2467.pdf" target="_blank">
+					Passaglia CL, Freeman DK, Troy JB (2009) Effects of remote stimulation on the modulated activity of cat retinal
+ganglion cells. J Neurosci 29:2467-76. PMID: 19244521.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://journals.physiology.org/doi/pdf/10.1152/jn.90527.2008" target="_blank">
+					Werner B, Cook PB, Passaglia CL (2008) Complex response patterns from a simple retinal circuit. J Neurophysiol
+100:1087-97. PMID: 19066519.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2716752/" target="_blank">
+					Freeman DK, Heine WF, Passaglia CL (2008) The maintained discharge of rat retinal ganglion cells. Vis Neurosci
+18:1-10. PMID: 18634718.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3253609/" target="_blank">
+					Werner B, Cook PB, Passaglia CL (2008) Whole-cell recordings of light evoked excitatory synaptic currents in the
+retinal slice. J Vis Exp 17, pii:771, doi: 10.3791/771. PMID: 18579656.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1550342/pdf/nihms10899.pdf" target="_blank">
+					Troy JB, Bohnsack DL, Chen J, Guo X, Passaglia CL (2005) Spatiotemporal integration of light by the cat X-cell
+center under photopic and scotopic condition. Vis Neurosci 22:493-500. PMID: 16212706
+				</a>
+			</p>
+		</div>
+		<div class="papers" id="2000" style="padding-left:20px;">
+			<h1>2000-2004</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5130336/" target="_blank">
+					Passaglia CL, Troy JB (2004) Impact of noise on retinal coding of visual signals. J Neurophysiol 92:1023-1033. PMID:
+					15071086
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5130245/pdf/nihms829345.pdf" target="_blank">
+					Passaglia CL, Troy JB (2004) Information transmission rates of cat retinal ganglion cells. J Neurophysiol 91:1217-
+1229. PMID: 14602836.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="Passaglia CL, Guo X, Chen J, Troy JB (2004) Tono-Pen XL calibration curves for cat, cow, and sheep. Vet Ophthalmol 7:261-264. PMID: 15200622." target="_blank">
+					Passaglia CL, Guo X, Chen J, Troy JB (2004) Tono-Pen XL calibration curves for cat, cow, and sheep. Vet
+Ophthalmol 7:261-264. PMID: 15200622.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6880403/pdf/nihms-1034519.pdf" target="_blank">
+					Passaglia CL, Troy JB, Rüttiger L, Lee BB (2002) Orientation sensitivity of ganglion cells in primate retina. Vision
+Res 42:683-694. PMID: 11888534.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5130337/pdf/ns005794.pdf" target="_blank">
+					Passaglia CL, Enroth-Cugell C, Troy JB (2001) Effects of remote stimulation on the mean firing rate of cat retinal
+ganglion cells. J Neurosci 21:5794-5803. PMID: 11466451.
+				</a>
+			</p>
+		</div>
+		<div class="papers" id="1995" style="padding-left:20px;">
+			<h1>1995-1999</h1>
+			<p>
+				<br>
+				<a id="link" href="https://journals.physiology.org/doi/pdf/10.1152/jn.1998.80.4.1800" target="_blank">
+					Passaglia CL, Dodge FA, Barlow RB (1998) Cell-based model of the Limulus lateral eye. J Neurophysiol 80:1800-
+1815. PMID: 9772240.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://pdfs.semanticscholar.org/6945/4be464768496337ddb31852a5f29c747e690.pdf" target="_blank">
+					Passaglia CL, Dodge FA, Herzog ED, Jackson BS, Barlow RB (1997) Deciphering a neural code for vision. Proc Natl
+Acad Sci 94:12649-12654. PMID: 9356504. 
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/BBLv193n2p205?casa_token=PT0Kk_NxQq4AAAAA:EJCvhIWh0aFgFJTB_fdHsw4A2ZCFy8ieGsW3zgm9Q57RMXoOaIJAZ-W8kcfALj-hVPRxsrDrl59A" target="_blank">
+					Passaglia CL, McSweeney ME, Stewart KM, Kim E, Mole EJ, Powers MK, Barlow RB (1997) Visual performance of
+horseshoe crabs: role of underwater lighting. Biol Bull 193:205-207. PMID: 9390387.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/BBLv193n2p203?casa_token=LmNCpzfpiV0AAAAA:92vRDmtdYuEoZmUp8mLaark4G-dHjP8-kO2mFB_v-YiQ_sCBHSgiHNK9hrjXfMwCt91tv5_v9CEy" target="_blank">
+					Stewart KM, Porcello DM, McSweeney ME, Saito T, Passaglia CL, Dodge FA, Barlow RB (1997) Histamine:
+putative neurotransmitter for lateral inhibition in Limulus eye. Biol Bull 193:203-205.
+				</a>
+				<br>
+				<br>
+				<a id="link" target="_blank">
+					Kim E, Passaglia CL, Dodge FA, Barlow RB (1996) The temporal transfer function of the Limulus lateral eye in
+situ. Biol Bull 191:259-260
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/BBLv189n2p213?casa_token=IxHU8xgt41IAAAAA:HMOdZ0xchrme15VegGHhqcHjXvHZLc0rrBAIQPuejqRDb8UvRrv7vw8EKad_e0BokXbQCf_N8Voj" target="_blank">
+					Passaglia CL, Dodge FA, Barlow RB (1995) Limulus is tuned into its visual environment. Biol Bull 189:213-215.
+PMID: 8541408.
+				</a>
+			</p>
+		</div>
+		<div class="papers" id="1990" style="padding-left:20px;">
+			<h1>1990-1994</h1>
+			<p>
+				<br>
+				<a id="link" href="https://www.journals.uchicago.edu/doi/pdfplus/10.1086/BBLv187n2p260?casa_token=RjPzFh_Y5ugAAAAA:G_JJBaaYKl0mwu2ihOXyXb3PV3J8H3uQ2w8u_28SrWIcIc2IVJvITBQ-eGaOMI5x7ry7L97gQ6QJ" target="_blank">
+					Passaglia CL, Dodge FA, Barlow RB (1994) Visual responses from the brain of Limulus. Biol Bull 187:260-261.
+PMID: 7811813.
+				</a>
+				<br>
+				<br>
+				<a id="link" href="https://www.journals.uchicago.edu/doi/pdf/10.1086/BBLv185n2p307" target="_blank">
+					Herzog ED, Passaglia CL, Dodge SA, Levine ND, Barlow RB (1993) Limulus vision in the ocean: comparing neural
+and behavioral thresholds. Biol Bull 185:307-308.
+				</a>
+				<br>
+			</p>
 		</div>
 </body>
 </html>
